@@ -9,7 +9,14 @@
 *
 * It should be a String.
 **/
+var firstName = "JP";
+console.log(firstName);
 
+var lastName ="Carreon";
+console.log(lastName);
+
+var birthPlace ="American Samoa";
+console.log(birthPlace);
 
 
 /**
@@ -21,6 +28,15 @@
 *
 * Their values should be a Number
 **/
+var favoriteNumber = 8;
+console.log(favoriteNumber);
+var currentYear = 2016;
+console.log(currentYear);
+var thatOnePrinceSong = 1999;
+console.log(thatOnePrinceSong);
+console.log("favoriteNumber " + favoriteNumber);
+console.log("currentYear " + currentYear);
+console.log("thatOnePrinceSong " + thatOnePrinceSong);
 
 
 
@@ -33,6 +49,18 @@
 *
 * Their values should be a Boolean
 **/
+var isDaytime = false;
+console.log(isDaytime);
+var isLeftHanded = false;
+console.log(isLeftHanded);
+var inHawaii = true;
+console.log(inHawaii);
+var isHappyCoding = true;
+console.log(isHappyCoding);
+console.log ("isDaytime " + isDaytime);
+console.log ("isLeftHanded " + isLeftHanded);
+console.log ("inHawaii " + inHawaii);
+console.log ("isHappyCoding " + isHappyCoding);
 
 
 
@@ -44,7 +72,10 @@
 *
 * Their values should be a Null value
 **/
-
+var enrolledAtDevLeague = null;
+console.log(enrolledAtDevLeague);
+var completedFridayPrep = null;
+console.log(completedFridayPrep);
 
 
 /**
@@ -55,7 +86,8 @@
 * This Array contains the names of all the states
 * which can be found along the west coast of The United States.
 **/
-
+var westCoast = ["California","Washingtion","Oregon"];
+console.log(westCoast);
 
 
 /**
@@ -66,7 +98,8 @@
 * This Array contains numbers that are considered 'even values'.
 * Have at least ten even values in this array.
 **/
-
+var evenNumbers = [2,4,6,8,10,12,14,16,18,20];
+console.log(evenNumbers);
 
 
 /**
@@ -79,7 +112,10 @@
 *
 * Extend this behavior to include subtraction, multiplication and division.
 */
-
+var sumOfNumbers = 2+3+4;
+console.log(sumOfNumbers);
+var arithmetic = 2*4/5;
+console.log(arithmetic);
 
 
 
@@ -100,7 +136,8 @@
 *   See if you can come up with a few examples of double comparison
 *   operator(==) vs triple comparison operator(===).
 */
-
+var isEqual = "Tacocat"==="tacocat";
+console.log(isEqual);
 
 
 /**
@@ -118,7 +155,14 @@
 *   The tests for this section cannot test your variable as it changes,
 *   it can only test that you declared the variable by giving it the right name.
 */
-
+var generalContainer = 5;
+console.log(generalContainer);
+generalContainer++;
+console.log(generalContainer);
+generalContainer--;
+console.log(generalContainer);
+generalContainer+=2;
+console.log(generalContainer);
 
 
 /**
@@ -129,10 +173,15 @@
 *
 * This function should return a String, "You jumped 9 feet high!"
 * if invoked in this way -> jump(9);
-*
-* Store the return value to a variable named `jumpResult` and use console.log to inspect the value which was returned by your function
+** Store the return value to a variable named `jumpResult` and use console.log to inspect the value which was returned by your function
 **/
+var jump = function(height){return " You jumped " + height + " feet high! ";}
+var jumpResult = jump(5);
+console.log(jumpResult); 
 
+function jump(height){return " You jumped " + height + " feet high! ";}
+jump ();
+console.log(jump(9));
 
 
 /**
@@ -140,8 +189,12 @@
 * Declare Functions
 *
 * Declare a Function named `cook` which a takes three arguments/parameters, `ingredient1`, `ingredient2`, `recipeName`
-*
-* This function should return a String along the lines of, "Tomatoes and Cheese make a Pizza!"
+** This function should return a String along the lines of, "Tomatoes and Cheese make a Pizza!"
 * if invoked in this way -> cook("Tomatoes", "Cheese", "Pizza");
 **/
+
+
+function cook(ingredient1, ingredient2, recipeName){return ingredient1 + " and " + ingredient2 + " make a " + recipeName;}
+cook();
+console.log(cook("Tomatoes", "Cheese", "Pizza!"));
 
